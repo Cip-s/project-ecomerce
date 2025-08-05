@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>registrasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex">
+  <!-- Left Side: Image -->
+  <div class="w-1/2 h-full">
+    <img src="https://i.pinimg.com/originals/ea/fe/0f/eafe0f62e0923fc921b58066677b8a2a.jpg" alt="Login Image" class="w-full h-full object-cover" />
+  </div>
+
+  <!-- Right Side: Form -->
+  <div class="w-1/2 flex items-center justify-center p-8">
+    <div class="w-full max-w-md">
+      <h2 class="text-3xl font-semibold mb-8">Registrasi</h2>
+
+      <form id="loginForm" action="home.html">
+        <div class="mb-6">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-700">Gmail</label>
+          <input type="email" id="email" name="email" placeholder="Gmail*" required class="w-full px-4 py-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <div class="mb-6">
+          <label for="password" class="block mb-2 text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password*" required class="w-full px-4 py-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <!-- Tombol Registrasi -->
+        <a href="./home.html">
+          <button class="px-6 py-2 border-2 border-purple-400 text-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition">
+            Register
+          </button>
+      </form>
+
+      <p class="mt-6 text-sm text-gray-600">
+        Didn't have account yet?
+        <a href="login.html" class="text-blue-500 hover:underline">Login</a>
+      </p>
+
+      <p id="output" class="mt-4 text-green-600 text-sm"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

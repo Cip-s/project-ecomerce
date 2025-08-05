@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoe Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-200 font-sans">
+
+  <nav style="background-color: #e6b3ff; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1000;">
+    <!-- Left Menu Items -->
+    <ul style="display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; font-size: 16px; font-weight: 500;">
+      <li><a href="#" class="px-2 py-2 text-black hover:text-purple-600 transition">Home</a></li>
+      <li><a href="#" class="px-2 py-2 text-black hover:text-purple-600 transition">Our Collection</a></li>
+      <li><a href="#" class="px-2 py-2 text-black hover:text-purple-600 transition">About Us</a></li>
+      <li><a href="#" class="px-2 py-2 text-black hover:text-purple-600 transition">Contact</a></li>
+    </ul>
+  
+    <!-- Search Bar -->
+    <div style="flex: 1; margin: 0 30px; position: relative;">
+      <input type="text" placeholder="Search For Products" style="width: 100%; padding: 10px 20px 10px 35px; border: none; border-radius: 30px; outline: none;" />
+      <span style="position: absolute; top: 50%; left: 12px; transform: translateY(-50%);">
+        <img src="./project_aset/find.png" alt="Search Icon" style="width: 20px; height: 20px;"/>
+      </span>
+    </div>
+  
+    <!-- Icons -->
+    <div style="display: flex; gap: 20px; align-items: center;">
+       <!-- Tombol Log In -->
+        <a href="./login.html">
+          <button class="px-6 py-2 border-2 border-purple-400 text-purple-400 rounded-md hover:bg-purple-100 transition">
+            Log In
+          </button>
+        </a>
+    <!-- Tombol Register -->
+     <a href="./registrasi.html"> 
+       <button class="px-6 py-2 bg-purple-400 text-white rounded-md hover:bg-purple-900 transition">
+         Register
+        </button>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="https://contents.mediadecathlon.com/p2531903/k$a7ad485c9d7bc6c888fd2cdade735700/men-s-women-s-basketball-shoes-900-nba-mid-3-white-nba-los-angeles-lakers-tarmak-8817135.jpg?f=1920x0&format=auto" alt="Shoe"
+         class="w-full h-[500px] object-cover"/>
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-transparent flex items-center justify-end px-4 text-right">
+      <div class="max-w-xl text-white">
+        <h1 class="text-2xl md:text-4xl font-semibold mb-4">
+          Welcome! to the shoe store website, we sell various shoes, from running shoes, soccer shoes, basketball shoes, outdoor shoes
+        </h1>
+        <button class="bg-white text-gray-800 px-4 py-2 rounded-full shadow hover:bg-gray-100">
+          View Collection
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Section -->
+<section class="py-12 bg-white text-center">
+  <h2 class="text-2xl font-bold mb-6">Category</h2>
+  <div class="flex justify-center gap-6 text-sm font-medium">
+    <a href="#" class="px-6 py-2 bg-purple-300 text-black rounded-full shadow hover:bg-purple-400 transition">
+      Running
+    </a>
+    <a href="#" class="px-6 py-2 text-black hover:text-purple-600 transition">
+      Football
+    </a>
+    <a href="#" class="px-6 py-2 text-black hover:text-purple-600 transition">
+      Basketball
+    </a>
+    <a href="#" class="px-6 py-2 text-black hover:text-purple-600 transition">
+      Outdoor
+    </a>
+  </div>
+</section>
+
+<!-- Our Collection Section -->
+<section class="py-12 text-center bg-white">
+  <h2 class="text-2xl font-bold mb-8">Our Collection</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 md:px-12">
+    <!-- Card 1-->
+    <div class="border border-black bg-white p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition duration-200">
+      <img src="./project_aset/sepatu.png" alt="Nike Air Supreme" class="mb-4" />
+      <h3 class="font-semibold">NIKE AIR SUPREME TRIPLE WHITE</h3>
+      <p class="text-sm text-gray-600 mb-3">Rp. 4.800.000</p>
+      <div class="flex gap-3">
+        <button class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-red-600"><img src="./project_aset/cart red.png" alt=""></button>
+        <button class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-orange-600"><img src="./project_aset/eye red.png" alt=""></button>
+      </div>
+
+      <!-- Cart 2-->
+    </div>
+    <div class="border border-black bg-white p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition duration-200">
+      <img src="./project_aset/sepatu.png" alt="Nike Air Supreme" class="mb-4" />
+      <h3 class="font-semibold">NIKE AIR SUPREME TRIPLE WHITE</h3>
+      <p class="text-sm text-gray-600 mb-3">Rp. 4.800.000</p>
+      <div class="flex gap-3">
+        <button class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-red-600"><img src="./project_aset/cart red.png" alt=""></button>
+        <button class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-orange-600"><img src="./project_aset/eye red.png" alt=""></button>
+      </div>
+
+      <!--Cart 3-->
+    </div>
+    <div class="border border-black bg-white p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition duration-200">
+      <img src="./project_aset/sepatu.png" alt="Nike Air Supreme" class="mb-4" />
+      <h3 class="font-semibold">NIKE AIR SUPREME TRIPLE WHITE</h3>
+      <p class="text-sm text-gray-600 mb-3">Rp. 4.800.000</p>
+      <div class="flex gap-3">
+        <button class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-red-600"><img src="./project_aset/cart red.png" alt=""></button>
+        <button class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-orange-600"><img src="./project_aset/eye red.png" alt=""></button>
+      </div>
+    </div>
+
+    <!-- Second Row of Products -->
+  <div class="flex flex-wrap justify-center gap-6 px-4 md:px-0">
+    <!-- Card Item 4 -->
+    <div class="border border-black bg-white p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition duration-200">
+      <img src="./project_aset/sepatu.png" alt="Puma RS-X" class="mb-4" />
+      <h3 class="font-semibold text-sm">NIKE AIR SUPREME TRIPLE WHITE</h3>
+      <p class="text-sm text-gray-600 mb-3">Rp. 4.800.000</p>
+      <div class="flex gap-3">
+        <button class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-red-600"><img src="./project_aset/cart red.png" alt=""></button>
+        <button class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-orange-600"><img src="./project_aset/eye red.png" alt=""></button>
+      </div>
+    </div>
+
+  <!-- Cart 5-->
+</div>
+<div class="border border-black bg-white p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition duration-200">
+  <img src="./project_aset/sepatu.png" alt="Nike Air Supreme" class="mb-4" />
+  <h3 class="font-semibold">NIKE AIR SUPREME TRIPLE WHITE</h3>
+  <p class="text-sm text-gray-600 mb-3">Rp. 4.800.000</p>
+  <div class="flex gap-3">
+    <button class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-red-600"><img src="./project_aset/cart red.png" alt=""></button>
+    <button class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-orange-600"><img src="./project_aset/eye red.png" alt=""></button>
+  </div>
+
+  <!-- Cart 6-->
+</div>
+<div class="border border-black bg-white p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition duration-200">
+  <img src="./project_aset/sepatu.png" alt="Nike Air Supreme" class="mb-4" />
+  <h3 class="font-semibold">NIKE AIR SUPREME TRIPLE WHITE</h3>
+  <p class="text-sm text-gray-600 mb-3">Rp. 4.800.000</p>
+  <div class="flex gap-3">
+    <button class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-red-600"><img src="./project_aset/cart red.png" alt=""></button>
+    <button class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm hover:bg-orange-600"><img src="./project_aset/eye red.png" alt=""></button>
+  </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10 mt-16">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    
+    <!-- Brand -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">Sneakify</h3>
+      <p class="text-sm text-gray-400">Your one-stop shop for premium sneakers. Style meets comfort.</p>
+    </div>
+
+    <!-- Navigation -->
+    <div>
+      <h4 class="font-semibold mb-4">Menu</h4>
+      <ul class="space-y-2 text-sm text-gray-400">
+        <li><a href="#" class="hover:text-white">Home</a></li>
+        <li><a href="#" class="hover:text-white">Our Collection</a></li>
+        <li><a href="#" class="hover:text-white">About Us</a></li>
+        <li><a href="#" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h4 class="font-semibold mb-4">Contact</h4>
+      <ul class="space-y-2 text-sm text-gray-400">
+        <li>Email: info@sneakify.com</li>
+        <li>Phone: +62 812-3456-7890</li>
+        <li>Location
+
+
+
+
+
+</body>
+</html>

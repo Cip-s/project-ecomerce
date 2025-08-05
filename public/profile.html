@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Account Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" font-sans">
+    <nav style="background-color: #e6b3ff; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1000;">
+        <!-- Left Menu Items -->   
+        <ul style="display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; font-size: 16px; font-weight: 500; ">
+          <li><a href="./home.html" class="px-2 py-2 text-black hover:text-purple-600 transition">Home</a></li>
+          <li><a href="./home.html" class="px-2 py-2 text-black hover:text-purple-600 transition">Our Collection</a></li>
+          <li><a href="./home.html" class="px-2 py-2 text-black hover:text-purple-600 transition">About Us</a></li>
+          <li><a href="./home.html" class="px-2 py-2 text-black hover:text-purple-600 transition">Contact</a></li>
+        </ul>
+      
+        <!-- Search Bar -->
+        <div style="flex: 1; margin: 0 30px; position: relative;">
+          <input type="text" placeholder="Search For Products" style="width: 100%; padding: 10px 20px 10px 35px; border: none; border-radius: 30px; outline: none;" />
+          <span style="position: absolute; top: 50%; left: 12px; transform: translateY(-50%);">
+            <img src="./project_aset/find.png" alt="Search Icon" style="width: 20px; height: 20px;"/>
+          </span>
+        </div>
+      
+        <!-- Icons -->
+        <div style="display: flex; gap: 20px; align-items: center;">
+          <a href="./cart.html"><img src="./project_aset/grocery-store.png" alt="Cart" style="width: 24px; height: 24px;" /></a>
+          <a href="./profile.html"><img src="./project_aset/account.png" alt="Account" style="width: 24px; height: 24px;" /></a>
+        </div>
+      </nav>
+
+  <h1 class="text-3xl font-semibold mb-6 ml-6">Account</h1>
+
+  <!-- Tabs -->
+  <div class="flex gap-6 border-b border-gray-300 mb-6 ml-6">
+    <button id="tab-personal" class="pb-2 border-b-2 border-black font-medium" onclick="showTab('personal')">
+      Personal Information
+    </button>
+    <button id="tab-orders" class="pb-2 text-gray-600" onclick="showTab('orders')">
+      Order History
+    </button>
+  </div>
+
+  <!-- Personal Info Section -->
+  <div id="section-personal">
+    <!-- Form -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ml-6">
+        <!-- Name -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Name</label>
+          <input type="text" placeholder="Full Name" class="w-80 border border-black rounded-md p-3 placeholder-gray-400" />
+        </div>
+  
+        <!-- Gender -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Gender</label>
+          <input type="text" placeholder="Man/Woman" class="w-80 border border-black rounded-md p-3 placeholder-gray-400" />
+        </div>
+  
+        <!-- Number -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Number</label>
+          <input type="text" placeholder="Number" class="w-80 border border-black rounded-md p-3 placeholder-gray-400" />
+        </div>
+  
+        <!-- Logout -->
+        <div class="flex items-center mt-6">
+          <span class="text-black mr-2">Not You?</span>
+          <a href="./index.html" class="text-red-600 font-semibold">Logout</a>
+        </div>
+      </div>
+  
+      <!-- Tanggal Lahir -->
+      <div class="mt-8 ml-6">
+        <label class="block text-sm font-medium mb-2">Tanggal Lahir</label>
+        <div class="flex gap-4">
+          <div>
+            <span class="block text-xs mb-1">Date</span>
+            <input type="text" placeholder="1" class="w-16 border border-black rounded-md p-2 text-center" />
+          </div>
+          <div>
+            <span class="block text-xs mb-1">Month</span>
+            <input type="text" placeholder="1" class="w-16 border border-black rounded-md p-2 text-center" />
+          </div>
+          <div>
+            <span class="block text-xs mb-1">Years</span>
+            <input type="text" placeholder="1999" class="w-24 border border-black rounded-md p-2 text-center" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add form or content here as needed -->
+  </div>
+
+  <!-- Order History Section -->
+  <div id="section-orders" class="hidden ml-6">
+    <p class="mb-4">You don't have any orders</p>
+    <a href="./home.html">
+        <button class="px-6 py-2 border border-black rounded-md shadow">shopping</button>
+    </a>
+  </div>
+
+  <script src="./prof.js"></script>
+
+</body>
+</html>
